@@ -12,22 +12,23 @@
 ## Lancio dei pacchetti:
 1. Per lanciare arm_description:
    ```bash
-     ros2 launch arm_description display.launch.py
+      ros2 launch arm_description display.launch.py
  
 2. Per lanciare arm_gazebo senza controlli:
  
      ```bash
       ros2 launch arm_gazebo arm_world.launch.py
  
-3. Per lanciare arm_gazebo con i controlli:
-      ```bash
-      ros2 launch arm_gazebo arm_gazebo.launch.py
- 
-4. Per lanciare arm_control:
+3. Per lanciare arm_control:
  
      ```bash
       ros2 launch arm_control control.launch.py
+
+4. Per lanciare arm_gazebo con i controlli:
+      ```bash
+      ros2 launch arm_gazebo arm_gazebo.launch.py
+ 
  
 5. Avviare il nodo ros_publisher:
       ```bash
-      ros2 topic pub /position_controller/command std_msgs/msg/Float64MultiArray "{data: [0.0, 0.0, 0.0, 0.0]}"
+      ros2 topic pub /position_controller/commands std_msgs/msg/   Float64MultiArray "{data: [0.5, -0.5, 0.3, -0.3]}"
