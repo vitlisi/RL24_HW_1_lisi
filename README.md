@@ -1,8 +1,8 @@
-# RL24_HW_1
+# RL24_HW_1___rev_2
 ## Istruzioni 
 1. Clona il repository in una cartella contente il ros2_docker_scripts:
    ```bash
-   git clone https://github.com/ferd-bot/RL_24_Homework_1_Robotics.git
+ git clone -b REV_2 https://github.com/vitlisi/RL24_HW_1_lisi.git
  
 2. Con lo scopo di configurare e costruire tutti i pacchetti presenti nel workspace:
    ```bash
